@@ -1,5 +1,20 @@
 import React, { Component } from 'react';
 
+// This is how you would have the code as a function, instead of using class
+// const PersonCard = props => {
+//     return(
+//         <div>
+//             <h1>{props.lastName}, {props.firstName}</h1>
+//             <p>Age: {props.age}</p>
+//             <p>Hair Color: {props.hairColor}</p>
+//         </div>
+//     );
+// }
+
+// export default PersonCard;
+
+
+// Below is how you would do this as a class
 class PersonCard extends Component {
 
     constructor(props) {
@@ -8,7 +23,7 @@ class PersonCard extends Component {
                 changeAge : props.age
             }
     }
-    
+
     render() {
         return (
             <div>
